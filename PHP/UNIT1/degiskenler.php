@@ -1,8 +1,8 @@
 <?php
 
 /*  Değişkenler $işareti ile tanımlanırlar
-    Harf veya _ karakteri ile bşalarlar
-    satı ile başlayamazlar
+    Harf veya _ karakteri ile başlarlar
+    sayı ile başlayamazlar
     Türkçe karakter içerebilir
     Büyük küçük harfe duyarlıdırlar (case-sensitive)
     atama operatörü (=)
