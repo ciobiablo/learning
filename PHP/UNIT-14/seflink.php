@@ -18,7 +18,7 @@ function Seflink($str)
     return trim($str, '-');
 }
 
-$str = '-Benim İçin 2017 nasıl geçti? c#';
+$str = '-Benim İçin 2022 nasıl geçti? c#';
 echo Seflink($str);
 
 ?>
