@@ -9,7 +9,7 @@
     <link rel="stylesheet" href=" <?php echo public_url('deneme.css')?>">
 </head>
 <body>
-<h3>İlk Deneme</h3>
-<?php echo site_url('admin'); ?>
+<h3>HOŞ GELDİNİZ!!</h3>
+
 </body>
 </html>

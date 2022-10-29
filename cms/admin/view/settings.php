@@ -29,6 +29,18 @@
                     <input type="text" name="settings[keywords]" value="<?php echo setting('keywords'); ?>">
                 </div>
             </li>
+            <li>
+                <label ">Site theme</label>
+                <div class="form-content">
+                    <select name="settings[theme]">
+                        <option value=""> -- Tema Seç --</option>
+                        <?php foreach ($themes as $theme): ?>
+                            <option <?php echo setting('theme') == $theme ? ' selected' : null ?>
+                                    value="<?php echo $theme; ?>"><?php echo $theme; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+            </li>
             <li class="submit">
                 <input type="hidden" name="submit" value="1">
                 <button type="submit">Ayarları Kaydet</button>

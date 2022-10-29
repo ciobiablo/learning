@@ -8,7 +8,7 @@ function controller($controllerName)
 function view($viewName)
 {
     $viewName = strtolower($viewName);
-    return PATH . '/app/view/' . $viewName . '.php';
+    return PATH . '/app/view/' . setting('theme') . '/' . $viewName . '.php';
 }
 
 function route($index)
@@ -17,7 +17,8 @@ function route($index)
     return isset($route[$index]) ? $route[$index] : false;
 }
 
-function setting($name){
+function setting($name)
+{
     global $settings;
     return $settings[$name] ?? false;
 }

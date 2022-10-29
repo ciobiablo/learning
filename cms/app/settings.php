@@ -3,3 +3,4 @@
 $settings["title"] = "ahmet han uçmaz";
 $settings["description"] = "bu benim sitem";
 $settings["keywords"] = "güzel sitem";
+$settings["theme"] = "theme1";
