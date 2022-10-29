@@ -71,7 +71,7 @@ CREATE TABLE `kategoriler`
 
 INSERT INTO `kategoriler` (`id`, `ad`)
 VALUES (2, 'Blog'),
-       (3, 'CSS'),
+       (3, 'CMS'),
        (4, 'PHP'),
        (5, 'Udemy'),
        (6, 'Test'),

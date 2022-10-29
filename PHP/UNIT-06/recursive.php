@@ -24,7 +24,7 @@ $kategoriler = [
     [
         'id' => 5,
         'parent' => 1,
-        'ad' => 'CSS DERSLERİ'
+        'ad' => 'CMS DERSLERİ'
     ],
     [
         'id' => 6,
