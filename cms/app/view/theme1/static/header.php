@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> <?php echo $meta['title']; ?></title>
     <?php if (isset($meta['description'])): ?>
-    <meta name="description" content="<?php echo $meta['description'] ?>">
+        <meta name="description" content="<?php echo $meta['description'] ?>">
     <?php endif; ?>
     <?php if (isset($meta['keywords'])): ?>
         <meta name="keywords" content="<?php echo $meta['keywords'] ?>">
@@ -63,10 +63,34 @@
                     <a class="nav-link" href="#">İletişim</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="<?php echo setting('search_placeholder') ?>" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0 mr-3">
+                <input class="form-control mr-sm-2" type="search"
+                       placeholder="<?php echo setting('search_placeholder') ?>" aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Ara</button>
             </form>
+            <?php if (session('user_id')): ?>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <?php echo $_SESSION['user_name'] ?>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="<?php echo site_url('profil') ?>">Profil</a>
+                        <a class="dropdown-item" href="<?php echo site_url('cikis') ?>">Çıkış Yap</a>
+                    </div>
+                </div>
+            <?php else: ?>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Giriş Yap
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="<?php echo site_url('giris') ?>">Giriş Yap</a>
+                        <a class="dropdown-item" href="<?php echo site_url('kayit') ?>">Kayıt Ol</a>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </nav>

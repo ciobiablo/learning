@@ -1,4 +1,4 @@
-<?php require view('static/header')?>
+<?php require view('static/header') ?>
 <section class="jumbotron text-center">
     <div class="container">
         <h1 class="jumbotron-heading"><?php echo setting('welcome_title') ?></h1>
@@ -9,9 +9,5 @@
         </p>
     </div>
 </section>
-<div class="container">
-    <div class="row pb-2">
-        <div class="col-md-12">
-            <h4 class="pb-3">Neler yapıyorum?</h4>
-        </div>
-        <?php require view('static/footer')?>
+
+<?php require view('static/footer') ?>

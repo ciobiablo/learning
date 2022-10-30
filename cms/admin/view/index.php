@@ -6,7 +6,6 @@
             <h3><?php echo 'Hoş geldin' ?></h3>
             <div class="box-content">
                 <p>
-                    <?php echo $homeText ?>
                 </p>
             </div>
         </div>
