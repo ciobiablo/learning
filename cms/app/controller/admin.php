@@ -21,6 +21,10 @@ $menus = [
             'add-user' => 'Üye Ekle',
             'users' => 'Üyeleri Listele',
         ]],
+    'menu' => [
+        'title' => 'Menü Yönetimi',
+        'icon' => 'bars'
+    ],
     'settings' => [
         'title' => 'Ayarlar',
         'icon' => 'cog'

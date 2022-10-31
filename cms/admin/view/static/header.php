@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title><?php echo isset( $title) ? $title . ' | Ahmet Han Uçmaz' : 'Ahmet Han Uçmaz' ?></title>
     <!--styles-->
-    <link rel="stylesheet" href="<?php echo admin_public_url('styles/main.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo admin_public_url('styles/main.min.css?v='. time()) ?>">
     <!--scripts-->
     <script src="<?php echo admin_public_url('scripts/jquery-1.12.2.min.js') ?>"></script>
     <!--    <script src="https://cdn.ckeditor.com/4.5.7/basic/ckeditor.js"></script>-->
@@ -97,3 +97,7 @@
 
 <!--content-->
 <div class="content">
+    <?php if (isset($error)): ?>
+    <div class="message error box-">
+<?php echo $error; ?>    </div>
+<?php endif; ?>
