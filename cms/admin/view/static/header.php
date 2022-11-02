@@ -1,21 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
     <meta charset="UTF-8">
     <title>AhmetHan</title>
-
-    <!--styles-->
     <link rel="stylesheet" href="<?= admin_public_url('styles/main.css?v=' . time()) ?>">
-
-    <!--scripts-->
     <script src="<?= admin_public_url('scripts/jquery-1.12.2.min.js') ?>"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!--    <script src="https://cdn.ckeditor.com/4.5.7/basic/ckeditor.js"></script>-->
     <script src="<?= admin_public_url('scripts/admin.js') ?>"></script>
-
     <style>
         .menu-container .handle {
             width: 15px;
@@ -41,11 +33,9 @@
             visibility: visible !important;
         }
     </style>
-
 </head>
 <body>
 
-<!--navbar-->
 <div class="navbar">
     <ul dropdown>
         <li>
@@ -59,7 +49,7 @@
         <li>
             <a href="#">
                 <span class="fa fa-comment"></span>
-                1
+
             </a>
         </li>
         <li>
@@ -88,9 +78,7 @@
     </ul>
 </div>
 
-<!--sidebar-->
 <div class="sidebar">
-
     <ul>
         <?php foreach ($menus as $mainUrl => $menu): ?>
             <li class="<?= (route(1) == $mainUrl) || isset($menu['submenu'][route(1)]) ? 'active' : null ?>">
@@ -123,14 +111,10 @@
     Collapse menu
 </span>
     </a>
-
 </div>
-
-<!--content-->
 <div class="content">
-
     <?php if (isset($error)): ?>
-        <div class="message error box-">
-            <?= $error ?>
+        <div class="message error box">
+            <?php echo $error ?>
         </div>
-    <?php endif; ?>
+    <?php endif ?>
