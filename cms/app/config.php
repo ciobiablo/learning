@@ -1,13 +1,14 @@
 <?php
+
 define('PATH', realpath('.'));
-const SUBFOLDER = true;
-const URL = 'http://localhost/cms';
+define('SUBFOLDER', true);
+define('URL', 'http://localhost/cms');
+
 return [
     'db' => [
         'name' => 'cms',
         'host' => 'localhost',
         'user' => 'root',
-        'pass' => 'root',
-    ],
+        'pass' => 'root'
+    ]
 ];
-

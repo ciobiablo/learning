@@ -1,2 +1,3 @@
 <?php
-echo ' admin controller uyeler sayfası';
+
+echo "üye sayfası";

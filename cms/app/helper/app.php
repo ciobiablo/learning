@@ -1,13 +1,11 @@
 <?php
-function controller($controllerName)
-{
+
+function controller($controllerName){
     $controllerName = strtolower($controllerName);
     return PATH . '/app/controller/' . $controllerName . '.php';
 }
 
-function view($viewName)
-{
-    $viewName = strtolower($viewName);
+function view($viewName){
     return PATH . '/app/view/' . setting('theme') . '/' . $viewName . '.php';
 }
 
@@ -17,10 +15,9 @@ function route($index)
     return isset($route[$index]) ? $route[$index] : false;
 }
 
-function setting($name)
-{
+function setting($name){
     global $settings;
-    return $settings[$name] ?? false;
+    return isset($settings[$name]) ? $settings[$name] : false;
 }
 
 function permalink($str, $options = array())
@@ -103,6 +100,7 @@ function permalink($str, $options = array())
     return $options['lowercase'] ? mb_strtolower($str, 'UTF-8') : $str;
 }
 
-function session($name){
-    return $_SESSION[$name] ?? false;
+function session($name)
+{
+    return isset($_SESSION[$name]) ? $_SESSION[$name] : false;
 }

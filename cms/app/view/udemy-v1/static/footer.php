@@ -22,33 +22,19 @@
                     <div class="col-12 col-md pr-5">
                         <h5>Hakkımda</h5>
                         <p class="small">
-                            <?php echo setting('about'); ?>
+                            <?=setting('about')?>
                         </p>
                     </div>
                     <div class="col-12 col-md">
                         <h5>Sosyal Medya</h5>
                         <ul class="list-unstyled text-small">
-                            <?php if ($facebook = setting('facebook')): ?>
-                                <li><a class="text-muted" href="https://facebook.com/<?php echo $facebook ?>"><i
-                                                class="fab fa-facebook-square"></i> <?php echo $facebook; ?></a>
-                                </li>
-                            <?php endif; ?>
-                            <?php if ($twitter = setting('twitter')): ?>
-                                <li><a class="text-muted" href="https://twitter.com/<?php echo $twitter; ?>"><i
-                                                class="fab fa-twitter-square"></i>
-                                        <?php echo $twitter; ?></a>
-                                </li>
-                            <?php endif; ?>
-                            <?php if ($instagram = setting('instagram')): ?>
-                                <li><a class="text-muted" href="https://instagram.com/<?php echo $instagram ?>"><i
-                                                class="fab fa-instagram"></i> <?php echo $instagram; ?></a>
-                                </li>
-                            <?php endif; ?>
-                            <?php if ($linkedin = setting('linkedin')): ?>
-                                <li><a class="text-muted" href="https://linkedin.com/in/<?php echo $linkedin; ?>"><i
-                                                class="fab fa-linkedin"></i> <?php echo $linkedin; ?></a>
-                                </li>
-                            <?php endif; ?>
+                            <?php foreach (menu(5) as $key => $menu): ?>
+                            <li>
+                                <a class="text-muted" href="<?=$menu['url']?>">
+                                    <?=htmlspecialchars_decode($menu['title'])?>
+                                </a>
+                            </li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </div>
@@ -56,5 +42,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

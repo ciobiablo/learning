@@ -1,2 +1,2 @@
-RewriteEngine ON
+RewriteEngine On
 RewriteRule ^([a-zA-Z0-9-_/]+)$ index.php [QSA]

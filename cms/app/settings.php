@@ -1,18 +1,18 @@
 <?php
 
-$settings["title"] = "Ahmet Han Uçmaz || Blog";
-$settings["description"] = "bu benim sitem";
-$settings["keywords"] = "güzel sitem";
-$settings["theme"] = "theme1";
+$settings["title"] = "Ahmethan| Blog";
+$settings["description"] = "burası sitenin açıklaması";
+$settings["keywords"] = "ahmet han uçmaz";
+$settings["theme"] = "udemy-v1";
 $settings["maintenance_mode"] = "2";
-$settings["maintenance_mode_title"] = "Bakım Modu!!!";
-$settings["maintenance_mode_description"] = "Şuan da bakım yapılmaktadır. Daha sonra tekrar deneyin.";
-$settings["logo"] = "Ucmaz.com";
-$settings["search_placeholder"] = "Sitede Ara!";
-$settings["about"] = "Bu içerik Hakkımda yazısıdır.";
-$settings["instagram"] = "ahmethanucmaz";
-$settings["facebook"] = "";
+$settings["maintenance_mode_title"] = "Bakım Modu!!";
+$settings["maintenance_mode_description"] = "Bu site şu anda güncelleniyor, lütfen birkaç dakika sonra tekrar deneyin.";
+$settings["logo"] = "Udemy.com";
+$settings["search_placeholder"] = "Sitede ara..";
+$settings["about"] = "burada footerdaki hakkımda yazısı bulunacak!!";
+$settings["facebook"] = "ahmethanucmaz";
 $settings["twitter"] = "ahmethanucmaz";
-$settings["linkedin"] = "AhmetHan";
-$settings["welcome_title"] = "SİTEME HOŞGELDİNİZ :)";
-$settings["welcome_description"] = "Bu benim ilk sitem. Git gide geliştiriyorum.";
+$settings["instagram"] = "ahmethanucmaz";
+$settings["linkedin"] = "ahmethanucmaz";
+$settings["welcome_title"] = "Siteye hoşgeldiniz!";
+$settings["welcome_text"] = "Bu web sitesi altında, yazılım ile alakalı makaleler, günlük hayat ile ilgili tecrübeler ve müzikle ilgili bazı tavsiyeler bulabilirsiniz. Kısaca kişisel bir bloğa hoşgeldiniz, keyfini çıkarın!";

@@ -1,3 +1,3 @@
 <?php
-echo ' Controller Bulunamadı!!';
 
+echo "controller bulunamadı!";
