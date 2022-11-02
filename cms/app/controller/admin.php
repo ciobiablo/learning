@@ -1,10 +1,10 @@
 <?php
 
-if (!route(1)){
+if (!route(1)) {
     $route[1] = 'index';
 }
 
-if (!file_exists(admin_controller(route(1)))){
+if (!file_exists(admin_controller(route(1)))) {
     $route[1] = 'index';
 }
 
@@ -16,10 +16,9 @@ $menus = [
     'users' => [
         'title' => 'Üyeler',
         'icon' => 'user',
-        'submenu' => [
-            'add-user' => 'Üye Ekle',
-            'users' => 'Üyeleri Liste'
-        ]
+//        'submenu' => [
+//            'users' => 'Üyeleri Liste'
+//        ]
     ],
     'menu' => [
         'title' => 'Menü Yönetimi',
