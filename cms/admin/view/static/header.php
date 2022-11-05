@@ -35,6 +35,7 @@
     </style>
 </head>
 <body>
+<?php if (session('user_rank') && session('user_rank') != 3): ?>
 
 <div class="navbar">
     <ul dropdown>
@@ -42,7 +43,7 @@
             <a href="#">
                 <span class="fa fa-home"></span>
                 <span class="title">
-            ANOTHER WORDPRESS SITE
+            <?php echo setting('title') ?>
         </span>
             </a>
         </li>
@@ -104,6 +105,18 @@
         <li class="line">
             <span></span>
         </li>
+        <li>
+            <form id="logout" action="<?php echo site_url('admin/logout') ?>" method="POST">
+                <input type="hidden" hidden name="action" value="logout"/>
+                <button form="logout"
+                        type="submit"
+                        style="width: calc(100% - 20px); margin: 10px; background-color:indianred; border: none; text-shadow: none; box-shadow: none; -webkit-box-shadow:none;"
+                >
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Çıkış Yap
+                </button>
+            </form>
+        </li>
     </ul>
     <a href="#" class="collapse-menu">
         <span class="fa fa-arrow-circle-left"></span>
@@ -117,4 +130,5 @@
         <div class="message error box">
             <?php echo $error ?>
         </div>
-    <?php endif ?>
+    <?php endif; ?>
+    <?php endif; ?>

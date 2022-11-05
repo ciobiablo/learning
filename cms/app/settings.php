@@ -1,6 +1,6 @@
 <?php
 
-$settings["title"] = "Ahmethan| Blog";
+$settings["title"] = "Ahmethan";
 $settings["description"] = "burası sitenin açıklaması";
 $settings["keywords"] = "ahmet han uçmaz";
 $settings["theme"] = "udemy-v1";

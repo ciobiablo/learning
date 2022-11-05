@@ -18,7 +18,8 @@
                 <th>Kullanıcı Adı</th>
                 <th class="hide">e-posta</th>
                 <th class="hide">Kayıt Tarihi</th>
-                <th class="hide">İşlemler</th>
+                <th class="hide">Rütbe</th>
+                <th>İşlemler</th>
             </tr>
             </thead>
             <tbody>
@@ -34,6 +35,9 @@
                     </td>
                     <td class="hide">
                         <?php echo $row['user_date'] ?>
+                    </td>
+                    <td class="hide">
+                        <?php echo user_ranks($row['user_rank'])   ?>
                     </td>
                     <td>
                         <a href="<?php echo admin_url('edit-user?id=' . $row['user_id']) ?>" class="btn"> Düzenle </a>

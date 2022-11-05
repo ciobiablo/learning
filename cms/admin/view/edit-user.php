@@ -23,6 +23,17 @@
                            value="<?php echo post('user_email') ? post('user_email') : $row['user_email'] ?>">
                 </div>
             </li>
+            <li>
+                <label> Rütbe </label>
+                <div class="form-content">
+                    <select name="user_rank">
+                        <option value=""> Rütbe Seçin </option>
+                        <?php foreach (user_ranks() as $id => $rank): ?>
+                            <option <?php echo ((post('user_rank') ? post('user_rank') : $row['user_rank'] )== $id) ? 'selected' : null ?> value="<?php echo $id ?>"> <?php echo $rank ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+            </li>
             <li class="submit">
                 <button name="submit" value="1" type="submit">Kaydet</button>
             </li>
